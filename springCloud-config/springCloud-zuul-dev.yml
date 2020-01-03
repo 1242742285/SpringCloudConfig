@@ -1,1 +1,7 @@
 from: git-dev-1.0
+
+zuul:
+  routes:
+    springCloud-client:
+      path: /springCloud-client/**
+      service-id: springCloud-client
