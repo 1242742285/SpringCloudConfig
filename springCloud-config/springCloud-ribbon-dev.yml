@@ -1,0 +1,12 @@
+server:
+  port: 8003
+      
+eureka:
+  client:
+    serviceUrl:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://localhost:8001/eureka/
+  instance:
+    preferIpAddress: true 
+       
