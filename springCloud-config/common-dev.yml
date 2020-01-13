@@ -1,0 +1,15 @@
+eureka:
+  client:
+    serviceUrl:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://localhost:8001/eureka/
+  instance:
+    prefer-ip-address: true 
+
+#动态刷新配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
